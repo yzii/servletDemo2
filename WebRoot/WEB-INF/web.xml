@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>Admin_AddServlet</servlet-name>
+  <servlet-class>com.servlet.Admin_AddServlet</servlet-class>
+ </servlet>
+  <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>Admin_deleteServlet</servlet-name>
+  <servlet-class>com.servlet.Admin_deleteServlet</servlet-class>
+ </servlet>
+  <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>Admin_UpdateServlet</servlet-name>
+  <servlet-class>com.servlet.Admin_UpdateServlet</servlet-class>
+ </servlet>
+ 
+ <!-- allocate mapping -->
+ <servlet-mapping>
+  <servlet-name>Admin_AddServlet</servlet-name>
+  <url-pattern>/servlet/Admin_AddServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>Admin_deleteServlet</servlet-name>
+  <url-pattern>/servlet/Admin_deleteServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>Admin_UpdateServlet</servlet-name>
+  <url-pattern>/servlet/Admin_UpdateServlet</url-pattern>
+ </servlet-mapping> 
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
